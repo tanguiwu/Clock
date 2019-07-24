@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_000000"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/toolbar_main" />
+
+
+    <LinearLayout
+        android:id="@+id/list_view_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/black_666666"
+            android:dividerHeight="0.5px"
+            android:scrollbars="none"
+
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_exist_clock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="未设置闹钟"
+        android:textColor="@color/black_555555"
+        android:textSize="38sp" />
+
+
+</LinearLayout>

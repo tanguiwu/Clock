@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog_pwd"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_dialog_create_folder_bg"
+    android:gravity="center"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">    <!-- 取消对话框按钮图标 -->
+    <ImageView
+        android:id="@+id/civ_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/de_clock_alert" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:minWidth="240dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="是否删除该闹钟"
+        android:textColor="@color/black_000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="关闭"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:textColor="@color/blue_395dd7"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:text="确定"
+            android:padding="5dp"
+            android:background="@color/white"
+            android:textColor="@color/blue_395dd7"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

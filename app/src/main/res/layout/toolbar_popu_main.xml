@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingBottom="40dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="40dp">
+
+    <TextView
+        android:id="@+id/toolbar_tv_edit_or_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="编辑"
+        android:textColor="@color/blue_395dd7"
+        android:textSize="26sp" />
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="闹钟"
+        android:textStyle="bold"
+        android:textColor="@color/black_333333"
+        android:textSize="28sp" />
+
+    <ImageView
+        android:id="@+id/toolbar_iv_add_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/toolbar_tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="保存"
+        android:textColor="@color/blue_395dd7"
+        android:textSize="26sp"
+       />
+
+</RelativeLayout>

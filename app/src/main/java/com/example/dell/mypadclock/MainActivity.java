@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
@@ -40,6 +41,8 @@ import com.example.dell.mypadclock.view.EnsureDialog;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;
+
+import me.jessyan.autosize.AutoSizeCompat;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, ClockDisPlayListAdapter.ClockDisPlayToogleBtIsOpen {
 
@@ -384,5 +387,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onDestroy() {
         super.onDestroy();
         mainHandler.removeCallbacks(runnable);
+    }
+
+    @Override
+    public Resources getResources() {
+        //需要升级到 v1.1.2 及以上版本才能使用 AutoSizeCompat
+        AutoSizeCompat.autoConvertDensityOfGlobal((super.getResources()));//如果没有自定义需求用这个方法
+//        AutoSizeCompat.autoConvertDensity(super.getResources(),667, false);//如果有自定义需求就用这个方法
+        return super.getResources();
     }
 }
